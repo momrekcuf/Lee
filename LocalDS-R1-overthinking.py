@@ -5,7 +5,7 @@ import gradio as gr
 import torch
 import random
 
-checkpoint = "C:\\Users\\Lee\\.lmstudio\\models\\lmstudio-community\\DeepSeek-R1-Distill-Qwen-7B-GGUF"
+checkpoint = "C:\\DeepSeek-R1-Distill-Qwen-7B-GGUF"
 tokenizer = AutoTokenizer.from_pretrained(checkpoint)
 model = AutoModelForCausalLM.from_pretrained(checkpoint,
                                              torch_dtype=torch.bfloat16,
